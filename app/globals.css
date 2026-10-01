@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,62 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+@import "tailwindcss";
+
+:root {
+  --bg: #eef1f4;
+  --panel: #ffffff;
+  --ink: #1b2430;
+  --muted: #5b6776;
+  --line: #d5dbe2;
+  --accent: #2f4bdb;
+  --accent-ink: #ffffff;
+  --bar: #c9d2f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #10151c;
+    --panel: #18202a;
+    --ink: #e8edf3;
+    --muted: #9aa6b5;
+    --line: #2a3542;
+    --accent: #7c93ff;
+    --accent-ink: #10151c;
+    --bar: #26325a;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--bg);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-bar: var(--bar);
+  --font-head: var(--font-head), Georgia, serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
 }
