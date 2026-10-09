@@ -20,15 +20,14 @@ export const PROFILE = {
     "Have a dataset, a question or a role in mind? Email me or find me on any of the links below.",
 };
 
-// icon: "linkedin" | "github" | "x" | "kaggle" (see components/SocialIcon.js to add more)
 export const SOCIALS = [
   {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-handle",
-    icon: "linkedin",
+    name: "Tiktok",
+    url: "https://www.linkedin.com/in/",
+    icon: "tiktok",
   },
-  { name: "GitHub", url: "https://github.com/your-handle", icon: "github" },
-  { name: "Twitter / X", url: "https://x.com/your-handle", icon: "x" },
+  { name: "GitHub", url: "https://github.com/enuenwembaanita-Annie", icon: "github" },
+  { name: "Twitter / X", url: "https://x.com/AnitaEnuenwemba", icon: "x" },
 ];
 
 // Leave link or repo as "" to hide that button.
